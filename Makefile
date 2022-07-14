@@ -13,5 +13,8 @@ d-down-clear:
 cache-clear:
 	docker-compose run --rm cli php artisan optimize:clear
 
-m-r-s:
-	docker-compose run --rm cli php artisan migrate:refresh --seed
+m-r:
+	docker-compose run --rm cli php artisan migrate:refresh
+
+parse:
+	docker-compose run --rm cli php artisan parser:xml
